@@ -10,15 +10,14 @@ exports.helloThere = functions.https.onRequest((req, res) => {
 });
 
 //setup routes
-app.get('/test', (req,res)=>{
-    res.send("it actually worked")
-})
-app.get('/another-one',(req,res)=>{
-    res.send('this works too')
-})
-exports.api= functions.https.onRequest(app);
-
-
+app.get("/test", (req, res) => {
+  res.send("it actually worked");
+});
+app.get("/another-one", (req, res) => {
+  res.send("this works too");
+});
+exports.api = functions.https.onRequest(app);
+console.log("new git functions")
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
